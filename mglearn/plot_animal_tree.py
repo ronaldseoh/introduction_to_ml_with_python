@@ -7,8 +7,8 @@ def plot_animal_tree(ax=None):
     plt.figure(dpi=100)
     if ax is None:
         ax = plt.gca()
-    mygraph = graphviz.Digraph(node_attr={'shape': 'box'},
-                               edge_attr={'labeldistance': "10.5"},
+    mygraph = graphviz.Digraph(node_attr={'shape': 'box', 'fontname': "Dotum"},
+                               edge_attr={'labeldistance': "10.5", 'fontname': "Dotum"},
                                format="png")
     mygraph.node("0", "날개가 있나요?")
     mygraph.node("1", "날 수 있나요?")
